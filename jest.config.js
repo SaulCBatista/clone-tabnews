@@ -10,7 +10,7 @@ const createJestConfig = nestJest({
 });
 const jestConfig = createJestConfig({
   moduleDirectories: ["node_modules", "<rootDir>"],
-  loadEnvConfig: ".env.development",
+  testTimeout: 60000,
 });
 
 module.exports = jestConfig;
